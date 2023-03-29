@@ -70,6 +70,7 @@ class MainActivity : AppCompatActivity() {
             // Update the UI on the main thread
             moviesAdapter.notifyDataSetChanged()
 
+            Toast.makeText(applicationContext,"Hello guys!!111!",Toast.LENGTH_SHORT).show()
         }
 
         Toast.makeText(applicationContext,"hello guys!!1",Toast.LENGTH_SHORT).show()
