@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.databinding.ActivityMainBinding
@@ -70,5 +71,7 @@ class MainActivity : AppCompatActivity() {
             moviesAdapter.notifyDataSetChanged()
 
         }
+
+        Toast.makeText(applicationContext,"hello guys!!1",Toast.LENGTH_SHORT).show()
     }
 }
