@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        println("ss")
         val layoutManager = LinearLayoutManager(this)
         binding.RecyclerView.layoutManager = layoutManager
         moviesAdapter = MoviesAdapter(movieList)
