@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
             }
             // Update the UI on the main thread
             moviesAdapter.notifyDataSetChanged()
+            println("deneme6 branc deneme")
         }
     }
 }
