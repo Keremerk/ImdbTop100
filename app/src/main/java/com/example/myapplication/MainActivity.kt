@@ -16,12 +16,12 @@ import org.json.JSONArray
 import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private val coroutineScope = CoroutineScope(Dispatchers.Main)
-    private lateinit var moviesAdapter : MoviesAdapter
+    private lateinit var moviesAdapter: MoviesAdapter
     private val movieList = ArrayList<Movies>()
 
-    override fun onCreate(savedInstanceState : Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -69,7 +69,6 @@ class MainActivity : AppCompatActivity() {
             }
             // Update the UI on the main thread
             moviesAdapter.notifyDataSetChanged()
-
         }
     }
 }
