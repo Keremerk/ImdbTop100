@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     private val coroutineScope = CoroutineScope(Dispatchers.Main)
     private lateinit var moviesAdapter : MoviesAdapter
     private val movieList = ArrayList<Movies>()
-///asdasdadada
+
     override fun onCreate(savedInstanceState : Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
